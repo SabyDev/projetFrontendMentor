@@ -1,33 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-@import url(./reset.css);
+* {
+    margin: 0;
+    padding: 0;
+}
 
-@import url(https://fonts.google.com/specimen/Kumbh+Sans);
 
-:root{
-    --color-text-Very-dark:   hsl(237, 12%, 33%);
-    --color-text-Dark: hsl(240, 6%, 50%)
-    --color-dividers-Light: hsl(240, 5%, 91%)
+:root {
+    --color-text-Very-dark: hsl(237, 12%, 33%);
+    --color-text-Dark: hsl(240, 6%, 50%) --color-dividers-Light: hsl(240, 5%, 91%)
 }
 
 body,
 main,
 #card,
-.question{
-    display: flex;    
+.question,
+.ok {
+    display: flex;
 }
 
-html{
-     
-  width: 100%;
+html {
+
+    width: 100%;
     height: 100%;
-    background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-size: cover;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
 }
-body{   
- justify-content: center;
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    justify-content: center;
+
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
@@ -35,31 +42,38 @@ h1{
     margin-bottom: 8%;
     margin-top: 10vh;
 }
-#card{
-margin-top: 20vh;
+
+#card {
+    margin-top: 20vh;
     justify-content: center;
- border-radius: 25px ;
+    border-radius: 25px;
     flex-direction: column;
     width: 82%;
     height: 68vh;
-    background-color: #fff;  
-    font-size : 12px;
-    position: relative; 
-    
+    background-color: #fff;
+    font-size: 12px;
+    position: relative;
+
 }
-.question{
-width: 100%;
-justify-content: space-between;
-margin-top: 15px;
-margin-bottom: 15px;
+
+.question {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-.question>p{
+
+.question>p {
     width: 80%;
-font-size: 12px;
-color: var(--color-text-Very-dark);
-padding-left: 25px;
+    font-size: 12px;
+    color: var(--color-text-Very-dark);
+    padding-left: 25px;
 }
-.ok{
+.question>p:hover{
+    color: var(--color-text-Dark);
+}
+
+.ok {
     width: 5px;
     height: 5px;
     background-image: url(../images/icon-arrow-down.svg);
@@ -68,9 +82,10 @@ padding-left: 25px;
     background-size: cover;
     border: none;
     margin-right: 10px;
-   
+
 }
-#illustration{
+
+#illustration {
     width: 72%;
     height: 37%;
     background-image: url(../images/illustration-woman-online-mobile.svg);
@@ -79,8 +94,21 @@ padding-left: 25px;
     background-repeat: no-repeat;
     position: absolute;
     top: -22%;
-   left: 15%;
+    left: 15%;
+    z-index: 1;
 }
+
+/* #illustration{
+    width: 72%;
+    height: 37%;
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -18%;
+   left: 15%;
+position: absolute;} */
 
 /* # Front-end Style Guide */
 
