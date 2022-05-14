@@ -15,6 +15,7 @@ body,
 main,
 #card,
 .question,
+.questionBox,
 .ok {
     display: flex;
 }
@@ -58,19 +59,31 @@ h1 {
 
 .question {
     width: 100%;
-    justify-content: space-between;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    flex-direction: column;
+    margin-top: 10px;
 }
 
-.question>p {
+.questionBox {
+
+    justify-content: space-between;
+
+
+}
+
+.para {
     width: 80%;
     font-size: 12px;
     color: var(--color-text-Very-dark);
-    padding-left: 25px;
+    padding-left: 15px;
 }
-.question>p:hover{
+
+.question>p:hover {
     color: var(--color-text-Dark);
+}
+
+.response {
+    display: none;
+    padding-left: 15px;
 }
 
 .ok {
